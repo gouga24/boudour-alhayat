@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ربط مع ملف CSS الرئيسي -->
+</head>
+<body>
+    <section id="login">
+        <div class="login-container">
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginPhone">رقم الهاتف:</label>
+                    <input type="tel" id="loginPhone" name="loginPhone" required pattern="[0-9]{10}" placeholder="مثال: 1234567890">
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">كلمة المرور:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+      // بيانات تسجيل الدخول مزورة للتجربة
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // منع النموذج من الإرسال مباشرة
+        const phone = document.getElementById('loginPhone').value;
+        const password = document.getElementById('loginPassword').value;
+
+        // البيانات التي يمكنك استخدامه لاختبار عملية تسجيل الدخول
+        const correctPhone = '1234567890';
+        const correctPassword = 'password123';
+
+        if (phone === correctPhone && password === correctPassword) {
+          window.location.href = 'index.html'; // إعادة توجيه إلى الصفحة الرئيسية بعد تسجيل الدخول
+        } else {
+          alert('رقم الهاتف أو كلمة المرور غير صحيحة!');
+        }
+      });
+    </script>
+</body>
+</html>

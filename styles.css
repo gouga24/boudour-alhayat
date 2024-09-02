@@ -1,0 +1,187 @@
+/* CSS الأساسي */
+body {
+    font-family: 'Cairo', sans-serif; /* استخدام خط Cairo */
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* لتغيير الاتجاه إلى اليمين لليسار */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* لتوسيط الشعار عمودياً */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo-item {
+    flex-grow: 1;
+    text-align: center; /* لتوسيط الشعار أفقياً */
+}
+
+.logo {
+    height: 50px;
+}
+
+.hero-section {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.welcome-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* المسافة بين النص والصور */
+}
+
+.welcome-image {
+    width: 100px; /* تعديل حجم الصور حسب الحاجة */
+    height: auto;
+}
+
+.left-image {
+    order: -1; /* لضمان أن الصورة اليسرى تظهر قبل النص */
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.section-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+/* styles.css */
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+#signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* لمركزية الصور */
+    gap: 10px; /* مسافة بين الصور */
+}
+
+.image-container img {
+    width: 200px; /* عرض ثابت للصور */
+    height: auto; /* الحفاظ على النسب */
+}
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
